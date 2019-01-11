@@ -1,0 +1,25 @@
+//- サイト共通の変数を定義
+//- 各ページでsetVariableブロックを使えば上書きできる
+-
+    var url = 'http://loacalhost:8000';
+
+    var meta = {
+        title: 'サイトタイトル',
+        description: 'サイトの説明',
+        keywords: 'きーわーど,キーワード,keyword'
+    };
+
+    var og = {
+        title: meta.title,
+        type: 'website',
+        url: url,
+        description: meta.description,
+        image: url + '/ogp.jpg'
+    };
+
+    var twitter = {
+        card: 'summary_large_image',
+        site: '@アカウント名',
+        title: meta.title,
+        description: meta.description
+    };
